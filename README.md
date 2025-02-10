@@ -18,6 +18,12 @@ receipt_processor/
 
 ## Installation
 
+**Clone the repository**:
+   ```sh
+   git clone https://github.com/AbdelrahmanZeidan5/receipt-processor.git
+   cd receipt-processor
+   ```
+   
 ### Using Docker
 
 1. **Build the Docker image**:
@@ -34,24 +40,20 @@ Note: use `sudo` before the commands if there is a permission error
 
 ### Without Docker
 
-1. **Clone the repository**:
-   ```sh
-   git clone https://github.com/AbdelrahmanZeidan5/receipt-processor.git
-   cd receipt-processor
-   ```
 
-2. **Create a virtual environment** (optional but recommended):
+
+1. **Create a virtual environment** (optional but recommended):
    ```sh
    python -m venv venv
    source venv/bin/activate
    ```
 
-3. **Install the dependencies**:
+2. **Install the dependencies**:
    ```sh
    pip install -r requirements.txt
    ```
 
-4. **Run the application**:
+3. **Run the application**:
    ```sh
    uvicorn app.main:app --reload
    ```
