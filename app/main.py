@@ -21,7 +21,7 @@ async def process_receipt(receipt: Receipt):
         receipt (Receipt): The receipt to process.
 
     Returns:
-        dict: A dictionary containing the unique ID of the processed receipt.
+        JSONResponse: Contains the unique receipt ID.
     """
     receipt_id = str(uuid4()).strip()
     receipts[receipt_id] = calculate_points(receipt)
@@ -37,7 +37,7 @@ async def get_points(receipt_id: str):
         receipt_id (str): The unique ID of the receipt.
 
     Returns:
-        dict: A dictionary containing the points awarded for the receipt.
+        JSONResponse: Contains the awarded points or an error message.
     """
     if receipt_id not in receipts:
         return JSONResponse(
