@@ -36,8 +36,8 @@ Note: use `sudo` before the commands if there is a permission error
 
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/AbdelrahmanZeidan5/receipt_processor.git
-   cd receipt_processor
+   git clone https://github.com/AbdelrahmanZeidan5/receipt-processor.git
+   cd receipt-processor
    ```
 
 2. **Create a virtual environment** (optional but recommended):
